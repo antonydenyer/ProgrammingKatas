@@ -2,7 +2,7 @@
 
 namespace RomanNumerals.Tests
 {
-    public class RomanNumeralTests
+    class RomanNumeralTests
     {
         [TestFixture]
         public class when_converting_an_integer_to_a_roman_numeral

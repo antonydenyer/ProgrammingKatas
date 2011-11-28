@@ -8,21 +8,21 @@ namespace RomanNumerals
         private readonly int _arabicNumber;
         
         //it seems simplier to specify out layers rather than calculating the 4,9 and 40 etc
-        private readonly Dictionary<int, string> _numeralMapping = new Dictionary<int, string>
+        private readonly List<RomanNumeralMap> _numeralMapping = new List<RomanNumeralMap>
             {
-                {1, "I"},
-                {4, "IV"},
-                {5, "V"},
-                {9, "IX"},
-                {10, "X"},
-                {40, "XL"},
-                {50, "L"},
-                {90, "XC"},
-                {100, "C"},
-                {400, "CD"},
-                {500, "D"},
-                {900, "CM"},
-                {1000, "M"},
+                new RomanNumeralMap(1, "I"),
+                new RomanNumeralMap(4, "IV"),
+                new RomanNumeralMap(5, "V"),
+                new RomanNumeralMap(9, "IX"),
+                new RomanNumeralMap(10, "X"),
+                new RomanNumeralMap(40, "XL"),
+                new RomanNumeralMap(50, "L"),
+                new RomanNumeralMap(90, "XC"),
+                new RomanNumeralMap(100, "C"),
+                new RomanNumeralMap(400, "CD"),
+                new RomanNumeralMap(500, "D"),
+                new RomanNumeralMap(900, "CM"),
+                new RomanNumeralMap(1000, "M"),
             };
 
 
@@ -44,18 +44,18 @@ namespace RomanNumerals
             do
             {
                 var largestNumeral = GetLargestNumeral(remainder);
-                remainder -= largestNumeral.Key;
-                romanNumeral += largestNumeral.Value;
+                remainder -= largestNumeral.ArabicNumber;
+                romanNumeral += largestNumeral.RomanNumeral;
             
             } while (remainder > 0);
 
             return romanNumeral;
         }
 
-        private KeyValuePair<int,string> GetLargestNumeral(int arabicNumber)
+        private RomanNumeralMap GetLargestNumeral(int arabicNumber)
         {
             return
-                _numeralMapping.Where(x => x.Key <= arabicNumber).OrderByDescending(x => x.Key).
+                _numeralMapping.Where(x => x.ArabicNumber <= arabicNumber).OrderByDescending(x => x.ArabicNumber).
                     First();
         }
     }
