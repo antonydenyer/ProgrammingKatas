@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B83DF218-D6A4-46A3-8970-B1B96DA24884}</ProjectGuid>
+    <ProjectGuid>{5B402917-6367-486A-BAF5-C4FABD2A9D69}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RomanNumerals.Tests</RootNamespace>
-    <AssemblyName>RomanNumerals.Tests</AssemblyName>
+    <RootNamespace>SevenDigital.Kata.Euler.Problems</RootNamespace>
+    <AssemblyName>SevenDigital.Kata.Euler.Problems</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,10 +32,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>..\..\..\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,14 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RomanNumeralTests.cs" />
+    <Compile Include="Problem_17_NumbersToWords\NumbersToWords.cs" />
+    <Compile Include="Problem_17_NumbersToWords\NumbersToWordsTests.cs" />
+    <Compile Include="Problem_17_NumbersToWords\Words.cs" />
+    <Compile Include="Problem_18_BinaryTriangle\BinaryTriangleTest.cs" />
+    <Compile Include="Problem_20_Factorial\Problem_20_Factorial.cs" />
+    <Compile Include="Problem_67_BinaryTriangle\BinaryTriangle.cs" />
+    <Compile Include="Problem_68_Magic_ring\MagicRingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RomanNumerals\RomanNumerals.csproj">
-      <Project>{FAC6E3C1-9DAA-4829-A9B7-C4E4B8E39C8F}</Project>
-      <Name>RomanNumerals</Name>
-    </ProjectReference>
+    <None Include="Problem_67_BinaryTriangle\triangle.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
