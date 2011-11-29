@@ -44,17 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem_17_NumbersToWords\NumbersToWords.cs" />
-    <Compile Include="Problem_17_NumbersToWords\NumbersToWordsTests.cs" />
-    <Compile Include="Problem_17_NumbersToWords\Words.cs" />
-    <Compile Include="Problem_18_BinaryTriangle\BinaryTriangleTest.cs" />
-    <Compile Include="Problem_20_Factorial\Problem_20_Factorial.cs" />
-    <Compile Include="Problem_67_BinaryTriangle\BinaryTriangle.cs" />
-    <Compile Include="Problem_68_Magic_ring\MagicRingTests.cs" />
+    <Compile Include="Problem_004_Palindromic\Palindromic.cs" />
+    <Compile Include="Problem_017_NumbersToWords\NumbersToWords.cs" />
+    <Compile Include="Problem_017_NumbersToWords\NumbersToWordsTests.cs" />
+    <Compile Include="Problem_017_NumbersToWords\Lookup.cs" />
+    <Compile Include="Problem_067_BinaryTriangle\BinaryTriangle.cs" />
+    <Compile Include="Problem_018_BinaryTriangle\BinaryTriangleTest.cs" />
+    <Compile Include="Problem_020_Factorial\Problem_20_Factorial.cs" />
+    <Compile Include="Problem_067_BinaryTriangle\BinaryTriangleTests.cs" />
+    <Compile Include="Problem_068_Magic_ring\MagicRing.cs" />
+    <Compile Include="Problem_068_Magic_ring\MagicRingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Problem_67_BinaryTriangle\triangle.txt">
+    <None Include="Problem_067_BinaryTriangle\triangle.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

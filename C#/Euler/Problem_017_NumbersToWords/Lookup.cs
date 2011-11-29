@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SevenDigital.Kata.Euler.Problems.Problem_17_NumbersToWords
+namespace SevenDigital.Kata.Euler.Problems.Problem_017_NumbersToWords
 {
     public static class Lookup 
     {

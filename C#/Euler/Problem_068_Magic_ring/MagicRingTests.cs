@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace SevenDigital.Kata.Euler.Problems.Problem_68_Magic_ring
+namespace SevenDigital.Kata.Euler.Problems.Problem_068_Magic_ring
 {
 	[TestFixture]
 	class MagicRingTests
@@ -26,18 +25,5 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_68_Magic_ring
 
 			return "";
 		}
-	}
-
-	internal class MagicRing
-	{
-		public MagicRing(int ringSize, int nodeSize)
-		{
-			for (int i = 0; i < ringSize; i++)
-			{
-				Nodes.Add(i, new int[nodeSize]);
-			}
-
-		}
-		Dictionary<int, int[]> Nodes = new Dictionary<int, int[]>();
 	}
 }
