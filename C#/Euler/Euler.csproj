@@ -44,7 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem_004_Palindromic\Palindromic.cs" />
+    <Compile Include="Problem_004_Palindromic\Palindrome.cs" />
+    <Compile Include="Problem_004_Palindromic\PalindromicTests.cs" />
     <Compile Include="Problem_017_NumbersToWords\NumbersToWords.cs" />
     <Compile Include="Problem_017_NumbersToWords\NumbersToWordsTests.cs" />
     <Compile Include="Problem_017_NumbersToWords\Lookup.cs" />
