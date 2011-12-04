@@ -33,11 +33,11 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_004_Palindromic
 			var first = new Palindrome(9999);
 
 			loopTicks = Time(() => first.IsPalindrome("906609"), 9999);
-			reverseTicks = Time(() => first.IsPalindromeWithReverse("906609"), 9999);
+		//	reverseTicks = Time(() => first.IsPalindromeWithReverse("906609"), 9999);
 			
 
 			Console.WriteLine("Loop: {0}", loopTicks);
-			Console.WriteLine("Loop: {0}", reverseTicks);
+		//	Console.WriteLine("Loop: {0}", reverseTicks);
 			
 		}
 
