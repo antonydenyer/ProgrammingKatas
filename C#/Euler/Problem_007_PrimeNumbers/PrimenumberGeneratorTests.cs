@@ -40,5 +40,13 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_007_PrimeNumbers
             var result = generator.Generate(10001).Last();
             Assert.That(result, Is.EqualTo(104743));
         }
+
+        [Test]
+        public void really_big_prime_is_104743()
+        {
+            var generator = new PrimeNumberGenerator();
+            var result = generator.Generate(30001).Last();
+            Assert.That(result, Is.EqualTo(350381));
+        }
     }
 }

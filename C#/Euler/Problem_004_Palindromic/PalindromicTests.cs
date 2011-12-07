@@ -28,8 +28,6 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_004_Palindromic
 		public void MOAR_PERFORMANCE()
 		{
 			long loopTicks;
-			long reverseTicks;
-			
 			var first = new Palindrome(9999);
 
 			loopTicks = Time(() => first.IsPalindrome("906609"), 9999);
@@ -39,6 +37,8 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_004_Palindromic
 			Console.WriteLine("Loop: {0}", loopTicks);
 		//	Console.WriteLine("Loop: {0}", reverseTicks);
 			
+
+			Console.WriteLine("Loop: {0}", loopTicks);
 		}
 
 		private long Time(Action toDo, int repetitions)

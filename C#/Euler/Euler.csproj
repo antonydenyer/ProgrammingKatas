@@ -44,10 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extension\Int32Extensions.cs" />
     <Compile Include="Problem_004_Palindromic\Palindrome.cs" />
     <Compile Include="Problem_004_Palindromic\PalindromicTests.cs" />
     <Compile Include="Problem_007_PrimeNumbers\PrimeNumberGenerator.cs" />
     <Compile Include="Problem_007_PrimeNumbers\PrimenumberGeneratorTests.cs" />
+    <Compile Include="Problem_005_EvenlyDivisible\EvenlyDivisibleTests.cs" />
     <Compile Include="Problem_017_NumbersToWords\NumbersToWords.cs" />
     <Compile Include="Problem_017_NumbersToWords\NumbersToWordsTests.cs" />
     <Compile Include="Problem_017_NumbersToWords\Lookup.cs" />
