@@ -1,0 +1,14 @@
+{
+  "author": "",
+  "name": "Problem_007_PrimeNumbers",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/antonydenyer/ProgrammingKatas.git"
+  },
+  "engines": {
+    "node": "~0.6.5"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
