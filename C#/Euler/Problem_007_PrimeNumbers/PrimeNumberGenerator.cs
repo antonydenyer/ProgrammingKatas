@@ -7,22 +7,20 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_007_PrimeNumbers
 {
     class PrimeNumberGenerator
     {
-        private List<int> _primeNumbers;
-
         public IEnumerable<int> Generate(int numberOfPrimes)
         {
-            _primeNumbers = new List<int> { 2 };
-            int numberToTest = 3;
+            var primeNumbers = new List<int> { 2 };
+            var numberToTest = 3;
 
-            while (_primeNumbers.Count < numberOfPrimes)
+            while (primeNumbers.Count < numberOfPrimes)
             {
                 if (IsPrime(numberToTest))
                 {
-                    _primeNumbers.Add(numberToTest);
+                    primeNumbers.Add(numberToTest);
                 }
                 numberToTest += 2;
             }
-            return _primeNumbers;
+            return primeNumbers;
         }
 
 
@@ -35,6 +33,22 @@ namespace SevenDigital.Kata.Euler.Problems.Problem_007_PrimeNumbers
                     return false;
             }
             return true;
+        }
+
+        public IEnumerable<int> GenerateBetween(int lower, int upper)
+        {
+            var primeNumbers = new List<int>();
+            var numberToTest = lower;
+
+            while (numberToTest <= upper)
+            {
+                if (IsPrime(numberToTest))
+                {
+                    primeNumbers.Add(numberToTest);
+                }
+                numberToTest++;
+            }
+            return primeNumbers;
         }
     }
 }
