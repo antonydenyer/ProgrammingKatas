@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Base" errors="0" tests="1" failures="0" time="0.004" timestamp="2014-06-12T16:33:42">
+  <testcase classname="Base" name="has get_name property" time="0.004"></testcase>
+</testsuite>
+</testsuites>
