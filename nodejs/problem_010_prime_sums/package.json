@@ -1,0 +1,16 @@
+{
+  "name": "tdd_base",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-coffee": "*",
+    "request": "~2.34.0",
+    "require": "~0.5.0",
+    "requirejs": "~2.1.11",
+    "grunt-jasmine-node": "~0.2.1"
+  },
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Prime" errors="0" tests="6" failures="0" time="231281.289" timestamp="2014-06-13T17:31:19">
+  <testcase classname="Prime" name="1 is not prime" time="0"></testcase>
+  <testcase classname="Prime" name="2 is prime" time="0"></testcase>
+  <testcase classname="Prime" name="3 is prime" time="0"></testcase>
+  <testcase classname="Prime" name="4 is not prime" time="0.001"></testcase>
+  <testcase classname="Prime" name="5 is prime" time="0"></testcase>
+  <testcase classname="Prime" name="adds them all up" time="231281.278"></testcase>
+</testsuite>
+</testsuites>
