@@ -50,4 +50,32 @@ describe Checkout do
     checkout.scan('B')
     expect(checkout.total).to be 45
   end
+
+  it 'should apply discount for two mixed basket' do
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('B')
+    checkout.scan('B')
+    checkout.scan('B')
+    checkout.scan('C')
+    checkout.scan('D')
+    expect(checkout.total).to be 290
+  end
+
+
+  it 'should apply discount for two mixed basket in any order' do
+    checkout.scan('A')
+    checkout.scan('B')
+    checkout.scan('A')
+    checkout.scan('B')
+    checkout.scan('C')
+    checkout.scan('D')
+    checkout.scan('A')
+    checkout.scan('B')
+    checkout.scan('A')
+
+    expect(checkout.total).to be 290
+  end
 end
