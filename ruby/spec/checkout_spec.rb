@@ -12,4 +12,11 @@ describe Checkout do
     expect(checkout.total).to be 50
   end
 
+
+  it 'should calculate total for single basket entry B' do
+    checkout.scan('B')
+    expect(checkout.total).to be 30
+  end
+
+
 end
