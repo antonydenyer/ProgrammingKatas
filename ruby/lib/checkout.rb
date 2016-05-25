@@ -12,12 +12,23 @@ class Checkout
   end
 
   def total
-    discount_multiple = @items.count{|item| item == 'A'} / 3
-    discount = discount_multiple * 20
+    discount = 0
 
-    discount_multiple = @items.count{|item| item == 'B'} / 2
-    discount += discount_multiple * 15
+    sku_count = @items.inject(Hash.new(0)) do |hash, sku|
+      hash[sku] += 1
+      hash
+    end
 
+
+    sku_count.each do | sku, count |
+      if sku == 'A'
+        discount += count / 3 * 20
+      end
+
+      if sku == 'B'
+        discount += count / 2 * 15
+      end
+    end
 
     @total - discount
   end
