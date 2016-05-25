@@ -1,7 +1,7 @@
 require 'checkout'
 
 describe Checkout do
-  let(:checkout){ Checkout.new() }
+  let(:checkout){ Checkout.new({'A' => 50, 'B' => 30, 'C' => 20, 'D' => 15}) }
 
   it 'total is zero when basket is empty' do
     expect(checkout.total).to be 0
