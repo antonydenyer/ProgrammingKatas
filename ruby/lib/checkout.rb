@@ -12,10 +12,8 @@ class Checkout
   end
 
   def total
-    discount = 0
-    if @items.count{|item| item == 'A'} == 3
-      discount = 20
-    end
+    discount_multiple = @items.count{|item| item == 'A'} / 3
+    discount = discount_multiple * 20
     @total - discount
   end
 
