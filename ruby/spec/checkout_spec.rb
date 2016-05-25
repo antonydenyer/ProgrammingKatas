@@ -1,10 +1,4 @@
-class Checkout
-
-  def total
-    return 0
-  end
-end
-
+require 'checkout'
 
 describe Checkout do
   let(:checkout){ Checkout.new }
