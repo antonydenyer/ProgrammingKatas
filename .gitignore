@@ -16,3 +16,4 @@ build/spec/report.html
 *.docstates
 *.ncrunchsolution
 *.DS_Store
+*.vscode
