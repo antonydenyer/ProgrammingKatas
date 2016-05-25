@@ -1,11 +1,15 @@
 class Checkout
 
-  def scan(sku)
+  def initialize()
+    @total = 0
+  end
 
+  def scan(sku)
+    @total += 50
   end
 
   def total
-    0
+    @total
   end
 
 end
