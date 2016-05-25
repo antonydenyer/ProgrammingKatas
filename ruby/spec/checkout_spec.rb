@@ -42,4 +42,10 @@ describe Checkout do
     checkout.scan('A')
     expect(checkout.total).to be 260
   end
+
+  it 'should apply discount for two basket entry B' do
+    checkout.scan('B')
+    checkout.scan('B')
+    expect(checkout.total).to be 45
+  end
 end
