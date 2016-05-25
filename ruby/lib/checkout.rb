@@ -5,7 +5,8 @@ class Checkout
   end
 
   def scan(sku)
-    @total += 50
+    @total += 50 if sku == 'A'
+    @total += 30 if sku == 'B'
   end
 
   def total
