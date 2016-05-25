@@ -18,5 +18,12 @@ describe Checkout do
     expect(checkout.total).to be 30
   end
 
+  it 'should calculate total for multiple basket entries' do
+    checkout.scan('A')
+    checkout.scan('B')
+    checkout.scan('C')
+    checkout.scan('D')
+    expect(checkout.total).to be 115
+  end
 
 end
