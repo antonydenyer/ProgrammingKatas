@@ -32,4 +32,14 @@ describe Checkout do
     checkout.scan('A')
     expect(checkout.total).to be 130
   end
+
+  it 'should apply discount for six basket entry A' do
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    checkout.scan('A')
+    expect(checkout.total).to be 260
+  end
 end
